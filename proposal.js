@@ -78,9 +78,10 @@ window.PROPOSAL = {
       group: "If you need more",
       icon: "clock",
       name: "Help during the build",
-      price: "",
+      price: "£90", unit: "per hour",
+      price2: "£600", unit2: "per day",
       onHome: false,
-      text: "If you end up needing someone for the build itself, I'm happy to chat about that too."
+      text: "For when the developer has questions, a section needs adjusting, or you want someone to check the build against the designs before launch. If you end up needing someone for the build itself, I'm happy to chat about that too."
     }
   ],
 
