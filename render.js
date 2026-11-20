@@ -45,7 +45,7 @@
 
   if (page === "home") {
     if (P.tabTitle) document.title = P.tabTitle;
-    fill("headline", P.headline + " " + logo(LOGO_HEADLINE));
+    fill("headline", P.headline + " " + logo(LOGO_HEADLINE) + (P.headlineAfter ? " " + P.headlineAfter : ""));
     fill("intro", P.intro);
     fill("curious",
       "<p>" + P.curious.opener + "</p>" +
