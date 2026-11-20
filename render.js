@@ -19,8 +19,8 @@
     var l = P.logo;
     return '<img src="' + attr(l.src) + '" alt="' + attr(P.client) + '" width="' + l.width + '" height="' + l.height + '" style="' + style + '">';
   }
-  var LOGO_HEADLINE = "height:1.15em;width:auto;vertical-align:-0.18em;margin-left:0.05em";
-  var LOGO_FOOTER = "height:20px;width:auto;align-self:center;display:block";
+  var LOGO_HEADLINE = "height:0.72em;width:auto;vertical-align:0;margin-left:0.12em";
+  var LOGO_FOOTER = "height:14px;width:auto;align-self:center;display:block";
 
   function priceHtml(o) {
     var s = (o.from ? "<small>from</small> " : "") + o.price + (o.unit ? " <small>" + o.unit + "</small>" : "");

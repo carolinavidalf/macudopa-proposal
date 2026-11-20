@@ -11,7 +11,7 @@ window.PROPOSAL = {
   // The logo sits at the end of the headline and in the footer.
   // Its size is set on the image itself, so it always matches the text height.
   // width and height are the image's real pixel size (only the ratio matters).
-  logo: { src: "client/logo.png", width: 1017, height: 136 },
+  logo: { src: "client/logo.png", width: 1600, height: 213 },
 
   // ---- Home ----
   headline: "Bringing the new brand to the website for",   // the logo goes right after this
