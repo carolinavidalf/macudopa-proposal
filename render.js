@@ -53,9 +53,16 @@
         return '<div class="item"><h2>' + i.title + "</h2><p>" + i.text + "</p></div>";
       }).join("") +
       (P.curious.note ? '<p class="fine">' + P.curious.note + "</p>" : ""));
-    fill("glance", P.offers.filter(function (o) { return o.onHome !== false; }).map(function (o) {
-      return '<a href="ways.html"><span>' + o.name + '</span><span class="p">' + priceHtml(o) + "</span></a>";
-    }).join(""));
+    var shown = P.offers.filter(function (o) { return o.onHome !== false; });
+    var core = shown.filter(function (o) { return !o.extra; });
+    var extras = shown.filter(function (o) { return o.extra; });
+    function glanceRow(o, quiet) {
+      var st = quiet ? ' style="color:var(--soft);font-size:15px"' : "";
+      return '<a href="ways.html"' + st + '><span>' + o.name + '</span><span class="p">' + priceHtml(o) + "</span></a>";
+    }
+    fill("glance", core.map(function (o) { return glanceRow(o, false); }).join("") +
+      (extras.length ? '<div style="font-size:13px;color:var(--muted);padding:28px 0 4px">Optional extras</div>' +
+        extras.map(function (o) { return glanceRow(o, true); }).join("") : ""));
     fill("price-note", P.priceNote);
     var start = P.offers.filter(function (o) { return o.id === P.startWith; })[0] || P.offers[0];
     fill("start", offerHtml(start, start.homeText || start.text) +

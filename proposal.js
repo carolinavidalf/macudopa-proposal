@@ -46,6 +46,7 @@ window.PROPOSAL = {
   // price2 + unit2: an optional second price, like a day rate.
   // homeText: optional longer text for when this offer is shown on Home.
   // onHome: false hides it from "At a glance" on Home.
+  // extra: true lists it on Home under a small "Optional extras" label, in a quieter style.
   offers: [
     {
       id: "main",
@@ -70,7 +71,7 @@ window.PROPOSAL = {
       icon: "scan",
       name: "Checking the dev quotes",
       price: "£300",
-      onHome: false,
+      extra: true,
       text: "Once you've got quotes back, I'll go through them with you against the brief, so you can see what's covered, what's missing and where the hours look off."
     },
     {
@@ -80,7 +81,7 @@ window.PROPOSAL = {
       name: "Help during the build",
       price: "£90", unit: "per hour",
       price2: "£600", unit2: "per day",
-      onHome: false,
+      extra: true,
       text: "For when the developer has questions, a section needs adjusting, or you want someone to check the build against the designs before launch. If you end up needing someone for the build itself, I'm happy to chat about that too."
     }
   ],
