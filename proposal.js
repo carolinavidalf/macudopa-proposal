@@ -5,39 +5,39 @@
 window.PROPOSAL = {
 
   // ---- The client ----
-  client: "Snitch",
-  tabTitle: "Working with Snitch",   // shown in the browser tab on the Home page
+  client: "MacuDopa",
+  tabTitle: "Working on MacuDopa",   // shown in the browser tab on the Home page
 
   // The logo sits at the end of the headline and in the footer.
   // Its size is set on the image itself, so it always matches the text height.
   // width and height are the image's real pixel size (only the ratio matters).
-  logo: { src: "client/logo.png", width: 515, height: 180 },
+  logo: { src: "client/logo.png", width: 1017, height: 136 },
 
   // ---- Home ----
-  headline: "Ways we could work together on",   // the logo goes right after this
+  headline: "Bringing the new brand to the website for",   // the logo goes right after this
 
-  intro: "You mentioned people mostly open Snitch to unlock an app or answer a friend's request. It's a screen-time app, so you don't want them spending time in it anyway. Most of it happens in tiny moments, like checking the pot, asking a friend for 15 more minutes, or approving someone else's request. So I'd focus on those, and on how the app feels when you use it.",
+  intro: "I went through both prototypes and the full brand toolkit. The wires are already in good shape, with real copy and a clear flow from the homepage to Shop, the Day product page, Lab results and the account screens, so the job is mostly about dressing them in the new brand in a way a Shopify developer can build from without guessing. I'd do it in a week, using Claude with Figma so the repetitive parts go fast and my time goes into the decisions.",
 
   curious: {
-    opener: "One of your App Store reviews says Snitch is &ldquo;just harsh enough to actually stop you using the apps, but not so harsh that you'll delete the app.&rdquo; That balance is what I'd keep in mind for all of this.",
+    opener: "The toolkit asks for a voice of &ldquo;calm, consideration, and care&rdquo;, and I think the site should feel the same way to someone with Parkinson's using it on their phone. These are the things I noticed while going through it.",
     items: [
-      { title: "Consistency", text: "Does the app feel like one thing from screen to screen, and the same on iPhone and Android now that Android is out? And is the Figma file set up so your team can keep it that way?" },
-      { title: "Flows", text: "Unlocking, begging the pot for more time, and approving a friend's request. People do it all the time, so it should take seconds." },
-      { title: "Copy", text: "Your website already sounds like friends talking. I'd check the app keeps that voice in the small moments, like the reason prompt or when someone eats the pot." },
-      { title: "Paying", text: "How free, solo premium and group premium come across, what happens when the 14-day trial ends, and how invite codes fit in." },
-      { title: "Getting offline", text: "How the hours you save turn into plans with friends, since that's what makes it feel rewarding and not just restrictive." }
+      { title: "Colour on the Shop page", text: "The wires are grey, so most of the work is deciding where Day Orange, Night Purple and Support Green go. The toolkit says text stays in Precision White or Macuna Purple and product colours shouldn't sit together, which gets tricky on Shop, where Day, Night, Sleep Support and Gut Support sit side by side, and on the Day + Night starter pack." },
+      { title: "Fonts", text: "Titles are Caslon Ionic Rounded and body copy is TWK Lausanne, and both need a web licence (Commercial Type and Weltkern). I'd flag that early in the dev brief, with a fallback, so it doesn't hold up the build. Memoir for product titles is free to use." },
+      { title: "What Horizon does out of the box", text: "A lot of the homepage maps nicely onto Horizon sections, but some parts won't come for free, like the Continuum Method graph, the MacuDopa vs most Mucuna supplements table and the Lab results page. In the dev brief I'd mark every section as native, custom Liquid, or an app, so a developer can quote from it straight away." },
+      { title: "Apps and accounts", text: "Subscribe and save, the 1-minute quiz, the Trustpilot reviews and the chat button will each need an app. The sign in, code and account screens look like Shopify's own customer accounts, which are styled through settings and not in the theme, so they'd sit in a separate part of the brief." },
+      { title: "Content that's still placeholder", text: "The wires already say reviews need a compliance check, and there are placeholders for batch numbers, the phone number and the professional quotes. I'd list those in the brief so nothing launches with XXXX in it." }
     ],
-    note: "This is a first take from our call."
+    note: "This is based on the wires and the toolkit Adam shared on Contra. If I've misread anything, I'd rather hear it early."
   },
 
   // Which offer shows under "Where I'd start" on Home (use its id from the list below).
-  startWith: "small",
+  startWith: "main",
 
-  nextStep: "If the small first project sounds good, just reply to my email and we'll find a start date. If you'd rather start with something else, tell me and we can talk it through.",
+  nextStep: "If this sounds right, just reply on Contra and we can have a quick call to go through the wires together. If you'd rather change the scope, tell me and we'll work it out.",
 
   // ---- Prices ----
   // Shown under the prices on Home and on Ways to work.
-  priceNote: "Prices are in pounds and a day means around 7 hours. If something doesn't fit the budget, tell me and we'll shrink the scope.",
+  priceNote: "Prices are in pounds and fixed for the scope above. If something extra comes up during the week, I'll tell you before I do it.",
 
   // ---- Offers ----
   // group: the grey label on Ways to work. Offers with the same group sit together, in this order.
@@ -48,51 +48,34 @@ window.PROPOSAL = {
   // onHome: false hides it from "At a glance" on Home.
   offers: [
     {
-      id: "small",
-      group: "Start small",
+      id: "main",
+      group: "The job",
       icon: "flag",
-      name: "A small first project",
-      price: "£1,200", unit: "about 2 days",
-      text: "Pick the one thing that matters most to you right now and we go deep on it together. We choose it after I've spent proper time in the app, so it's based on what I actually see and on what you know about your users. You get the designs and a walkthrough call where I go through everything.",
-      homeText: "Pick the one thing that matters most to you right now and we go deep on it together. We choose it after I've spent time in the app, so it's based on what I actually see and on what you know about your users. You get the designs and a walkthrough call where I go through everything. It's also an easy way to see how we work together before anything bigger."
+      name: "The wires and both briefs",
+      price: "£2,400", unit: "one week",
+      text: "I apply the rebrand to every wire on mobile and desktop: Home, Shop, the product page, Lab results, and the sign in and account screens. The Figma file gets the toolkit's colours and type as variables and components, named to match how Horizon sections and blocks work. You also get a design brief that explains how the brand is used across the site, and a dev brief that goes section by section with what's native, what's custom and what needs an app, so it's ready to send out for quotes.",
+      homeText: "I apply the rebrand to every wire on mobile and desktop: Home, Shop, the product page, Lab results, and the sign in and account screens. The Figma file gets the toolkit's colours and type as variables and components, named to match how Horizon sections and blocks work. You also get a design brief that explains how the brand is used across the site, and a dev brief that goes section by section with what's native, what's custom and what needs an app, so it's ready to send out for quotes. I've built a component library from Figma tokens in React before, so setting up a file that maps cleanly to code is something I care about a lot."
     },
     {
-      id: "review",
-      group: "Go bigger",
-      icon: "scan",
-      name: "A review of the core flows",
-      price: "£1,800", unit: "about 3 days",
-      text: "I go through the main flows twice, once like a brand new user and once like someone who's been using it for a while, and I look at the copy and how consistent things feel from screen to screen. You get a list of what I'd fix first and why, mockups of the top changes, and a call where I walk you through it all."
-    },
-    {
-      id: "figma",
-      group: "Go bigger",
+      id: "pages",
+      group: "If you need more",
       icon: "layers",
-      name: "Figma foundations",
-      price: "£1,200", from: true,
-      text: "Tidying how the design is built so the app feels like one thing and your team can move faster, from components and styles to how the Figma file is organised. It's especially handy around a redesign. The size depends on what you already have, so I'd start by having a look at your current file. If you need a full design system, I'd scope it after the first project."
-    },
-    {
-      id: "pack",
-      group: "Go bigger",
-      icon: "sliders",
-      name: "A focused pack",
-      price: "£1,200", from: true,
-      onHome: false,
-      text: "For after a first project, when you want to keep going one topic at a time, like a flow, the UX copy, or what helps people decide to pay. We agree the scope together and it's priced in days."
+      name: "The pages that aren't wired yet",
+      price: "£300", unit: "per page",
+      text: "The menu and footer link to pages like How to take it, FAQs, Our story and For professionals that don't have wires yet. If you want them in the same file, I'd design them in the same system, mobile and desktop, and add them to both briefs."
     },
     {
       id: "time",
-      group: "Over time",
+      group: "If you need more",
       icon: "clock",
-      name: "By the hour or by the day",
+      name: "Help during the build",
       price: "£90", unit: "per hour",
       price2: "£600", unit2: "per day",
-      text: "For smaller things as they come up, whenever you'd rather just book some time. It can also be a regular thing, like one day a week where I take one feature at a time from a rough idea to something ready to build. We check in at the end of each month and can pause or change it at any point."
+      text: "For when the developer has questions, a section needs adjusting, or you want someone to check the build against the designs before launch."
     }
   ],
 
   // ---- How it goes ----
   // The three steps are the same for every client. This line under them changes with the offers.
-  timing: "A small project is about 2 days of work, usually spread over a week or two so there's time for your feedback. A review of the core flows takes about two weeks. Both depend on how fast I can get access and feedback."
+  timing: "The whole thing is one week of work. I'd share the homepage midweek so you can check the direction before I take it across the rest of the pages."
 };
